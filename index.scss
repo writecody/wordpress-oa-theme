@@ -1,0 +1,260 @@
+// colors
+
+$art-black: #170C14;
+$art-blue: #60A5B0;
+$art-pink: #F9D8D9;
+$art-red: #E03648;
+
+// fonts
+
+// font-family: 'Amiri', serif;
+// font-weight: 400;
+// font-weight: 700;
+// font-style: italic;
+
+// element selectors
+
+body {
+  padding: 0 1rem;
+}
+
+footer {
+  background: $art-black;
+  color: $art-pink;
+  display: grid;
+  font-family: 'Amiri', serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  'left right';
+  height: auto;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  transform: skew(3deg);
+  transition: transform 0.2s;
+  
+  & a {
+    color: $art-pink;
+    
+    &:hover {
+      color: $art-red;
+    }
+  }
+}
+
+h1 {
+  color: $art-pink;
+  font-family: 'Amiri', serif;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+h2 {
+  background: $art-pink;
+  color: $art-black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Amiri', serif;
+  font-style: italic;
+  height: auto;
+  padding-left: 1rem;
+  width: 9rem;
+  transform: skew(3deg);
+  transition: transform 0.2s;
+}
+
+img {
+  display: flex;
+  height: auto;
+  margin: 3rem 0 0;
+  width: 50%;
+}
+
+p {
+  color: $art-black;
+  font-family: 'Amiri', serif;
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+// custom selectors
+
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+  &__copy {
+    background: $art-pink;
+    color: $art-black;
+    font-family: 'Amiri', serif;
+    padding: 0 0.25rem 0 0.75rem;
+    word-wrap: break-word;
+  }
+  
+  &__header {
+    background: $art-red;
+    color: $art-pink;
+  }
+}
+
+.archive {
+  align-items: center;
+  background: $art-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.artist-list {
+  background: $art-pink;
+  color: $art-black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 1rem 0;
+  padding: 0 0 0 2rem;
+  transform: skew(-1deg);
+  width: 100%;
+}
+
+.artist-link {
+  font-family: 'Amiri', serif;
+  font-size: 2rem;
+  font-style: italic;
+  text-decoration: none;
+  
+  &:hover {
+    color: $art-red;
+  }
+}
+
+.buy-button {
+  background: $art-black;
+  color: $art-pink;
+  font-family: 'Amiri', serif;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transform: skew(-1.5deg);
+  width: 4rem;
+  
+  &:hover {
+    color: $art-blue;
+  }
+}
+
+.container {
+  align-items: center;
+  background: $art-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.footer-menu {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  grid-area: right;
+  margin: 1rem 1rem 0 0;
+}
+
+.home-link {
+  grid-column-start: 2;
+  margin: 1rem 1rem 0 0;
+  justify-self: end;
+}
+
+.link-to-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  
+  &:visited {
+    color: $art-black;
+  }
+}
+
+.link-to-info h2 {
+  &:hover {
+    color: $art-blue;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+  transform: skew(2deg);
+  width: 100%;
+}
+
+.pagination a {
+  background: $art-black;
+  color: $art-pink;
+  font-family: 'Amiri', sans-serif;
+  letter-spacing: 0.025rem;;
+  padding: 0 0.5rem;
+  text-decoration: none;
+  
+  &:hover {
+    color: $art-blue;
+  }
+}
+
+.parallelogram {
+  background: $art-black;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  transform: skew(3deg);
+  transition: transform 0.4s;
+  &:hover {
+    transform: skew(-9deg);
+  }
+  
+  & a {
+    text-decoration: none;
+  }
+}  
+
+.sidebar {
+  grid-area: left;
+}
+
+.work-info {
+  background: $art-pink;
+  color: $art-black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Amiri', serif;
+  font-style: italic;
+  height: auto;
+  margin-bottom: 1rem;
+  padding: 0 2rem 0 1rem;
+  transform: skew(-1deg);
+}
+
+@media(max-width:450px) {
+  img {
+    display: flex;
+    height: auto;
+    margin: 3rem 0 0;
+    width: 100%;
+  }
+}

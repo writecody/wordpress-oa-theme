@@ -1,0 +1,7 @@
+- [x] - create template for category archive
+- [x] - add link to single page to each image and title on index.php
+- [x] - include 'About' page for site
+- [ ] - link artist name in index.php for each listing to individual artist page 
+- [ ] - include 'About < artist name >' section on individual artist page
+- [ ] - add up contact links and copy
+- [ ] - deploy
